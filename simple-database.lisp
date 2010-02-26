@@ -70,3 +70,6 @@
 
 (defmacro where (&rest clauses)
   `#'(lambda (cd) (and ,@(make-comparisons-list clauses))))
+
+(defun ping (text)
+  (format t text))
